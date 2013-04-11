@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FD2438D171720E6009FC350 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD2438C171720E6009FC350 /* Foundation.framework */; };
+		7FD2439E171720E6009FC350 /* App_Net_Integration.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FD2439D171720E6009FC350 /* App_Net_Integration.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7FD24389171720E6009FC350 /* App.Net Integration.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "App.Net Integration.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD2438C171720E6009FC350 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7FD24391171720E6009FC350 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		7FD24392171720E6009FC350 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		7FD24394171720E6009FC350 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		7FD24398171720E6009FC350 /* App_Net_Integration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = App_Net_Integration.plist; path = Package/Library/PreferenceLoader/Preferences/App_Net_Integration.plist; sourceTree = "<group>"; };
+		7FD24399171720E6009FC350 /* App_Net_IntegrationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = App_Net_IntegrationIcon.png; path = Package/Library/PreferenceLoader/Preferences/App_Net_IntegrationIcon.png; sourceTree = "<group>"; };
+		7FD2439A171720E6009FC350 /* App_Net_IntegrationIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "App_Net_IntegrationIcon@2x.png"; path = "Package/Library/PreferenceLoader/Preferences/App_Net_IntegrationIcon@2x.png"; sourceTree = "<group>"; };
+		7FD2439B171720E6009FC350 /* App.Net Integration-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App.Net Integration-Prefix.pch"; sourceTree = "<group>"; };
+		7FD2439C171720E6009FC350 /* App_Net_Integration.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = App_Net_Integration.xm; sourceTree = "<group>"; };
+		7FD2439D171720E6009FC350 /* App_Net_Integration.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = App_Net_Integration.mm; sourceTree = "<group>"; };
+		7FD243A1171720E6009FC350 /* App_Net_Integration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = App_Net_Integration.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/App_Net_Integration.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FD24385171720E6009FC350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD2438D171720E6009FC350 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FD2437E171720E6009FC350 = {
+			isa = PBXGroup;
+			children = (
+				7FD2438E171720E6009FC350 /* App.Net Integration */,
+				7FD2438B171720E6009FC350 /* Frameworks */,
+				7FD2438A171720E6009FC350 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FD2438A171720E6009FC350 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FD24389171720E6009FC350 /* App.Net Integration.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FD2438B171720E6009FC350 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FD2438C171720E6009FC350 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FD2438E171720E6009FC350 /* App.Net Integration */ = {
+			isa = PBXGroup;
+			children = (
+				7FD2439C171720E6009FC350 /* App_Net_Integration.xm */,
+				7FD2439D171720E6009FC350 /* App_Net_Integration.mm */,
+				7FD2438F171720E6009FC350 /* Package */,
+				7FD24393171720E6009FC350 /* Supporting Files */,
+			);
+			path = "App.Net Integration";
+			sourceTree = "<group>";
+		};
+		7FD2438F171720E6009FC350 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				7FD24390171720E6009FC350 /* DEBIAN */,
+				7FD24395171720E6009FC350 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		7FD24390171720E6009FC350 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				7FD24391171720E6009FC350 /* control.txt */,
+				7FD24392171720E6009FC350 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		7FD24393171720E6009FC350 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FD24394171720E6009FC350 /* PackageVersion.plist */,
+				7FD2439B171720E6009FC350 /* App.Net Integration-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FD24395171720E6009FC350 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				7FD24396171720E6009FC350 /* PreferenceLoader */,
+				7FD2439F171720E6009FC350 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		7FD24396171720E6009FC350 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				7FD24397171720E6009FC350 /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		7FD24397171720E6009FC350 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				7FD24398171720E6009FC350 /* App_Net_Integration.plist */,
+				7FD24399171720E6009FC350 /* App_Net_IntegrationIcon.png */,
+				7FD2439A171720E6009FC350 /* App_Net_IntegrationIcon@2x.png */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		7FD2439F171720E6009FC350 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				7FD243A0171720E6009FC350 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		7FD243A0171720E6009FC350 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				7FD243A1171720E6009FC350 /* App_Net_Integration.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7FD24386171720E6009FC350 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7FD24388171720E6009FC350 /* App.Net Integration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FD243A4171720E6009FC350 /* Build configuration list for PBXNativeTarget "App.Net Integration" */;
+			buildPhases = (
+				7FD24383171720E6009FC350 /* ShellScript */,
+				7FD24384171720E6009FC350 /* Sources */,
+				7FD24385171720E6009FC350 /* Frameworks */,
+				7FD24386171720E6009FC350 /* Headers */,
+				7FD24387171720E6009FC350 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "App.Net Integration";
+			productName = "App.Net Integration";
+			productReference = 7FD24389171720E6009FC350 /* App.Net Integration.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FD2437F171720E6009FC350 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 7FD24382171720E6009FC350 /* Build configuration list for PBXProject "App.Net Integration" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7FD2437E171720E6009FC350;
+			productRefGroup = 7FD2438A171720E6009FC350 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FD24388171720E6009FC350 /* App.Net Integration */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FD24383171720E6009FC350 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		7FD24387171720E6009FC350 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FD24384171720E6009FC350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD2439E171720E6009FC350 /* App_Net_Integration.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7FD243A2171720E6009FC350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		7FD243A3171720E6009FC350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		7FD243A5171720E6009FC350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "App.Net Integration/App.Net Integration-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		7FD243A6171720E6009FC350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "App.Net Integration/App.Net Integration-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FD24382171720E6009FC350 /* Build configuration list for PBXProject "App.Net Integration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD243A2171720E6009FC350 /* Debug */,
+				7FD243A3171720E6009FC350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FD243A4171720E6009FC350 /* Build configuration list for PBXNativeTarget "App.Net Integration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD243A5171720E6009FC350 /* Debug */,
+				7FD243A6171720E6009FC350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FD2437F171720E6009FC350 /* Project object */;
+}

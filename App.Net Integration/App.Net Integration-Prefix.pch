@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'App.Net Integration' target in the 'App.Net Integration' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
