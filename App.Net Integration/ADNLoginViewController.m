@@ -48,10 +48,6 @@ typedef NS_ENUM(NSInteger, ADNCellType) {
 	[usernameField.textField becomeFirstResponder];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
 - (void)doDismiss {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
@@ -74,7 +70,7 @@ typedef NS_ENUM(NSInteger, ADNCellType) {
             [self doDismiss];
             [MBHUDView hudWithBody:@"Logged in!" type:MBAlertViewHUDTypeCheckmark hidesAfter:2.0 show:YES];
 		} else {
-            [MBHUDView hudWithBody:[error localizedDescription] type:MBAlertViewHUDTypeExclamationMark hidesAfter:3.0 show:YES];
+            [[[[UIAlertView alloc] initWithTitle:@"Error!" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease] show];
 			usernameField.textField.enabled = YES;
 			passwordField.textField.enabled = YES;
 		}

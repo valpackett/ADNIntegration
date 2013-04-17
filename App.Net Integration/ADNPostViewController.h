@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ADNPostViewController : UIViewController <UITextFieldDelegate>
+@interface ADNPostViewController : UIViewController <UITextViewDelegate>
 
 @property (strong, nonatomic) id delegate;
 @property (strong, nonatomic) NSString *url;
-@property (strong, nonatomic) UITextField *bodyField;
+@property (strong, nonatomic) UITextView *bodyField;
 
 @end

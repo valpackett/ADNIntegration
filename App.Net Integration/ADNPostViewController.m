@@ -13,6 +13,9 @@
 #import "MBHUDView.h"
 #import "ADNKit.h"
 
+#define POST_LENGTH 256
+#define TITLE @"Post to App.net"
+
 @interface ADNPostViewController ()
 
 @end
@@ -54,11 +57,6 @@
     [[ANKClient sharedClient] createPost:post completion:handler];
 }
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    UITextPosition *beginning = [textField beginningOfDocument];
-    [textField setSelectedTextRange:[textField textRangeFromPosition:beginning toPosition:beginning]];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Top
@@ -66,14 +64,15 @@
     UIBarButtonItem *postButton = [[UIBarButtonItem alloc] initWithTitle:@"Post" style:UIBarButtonItemStyleDone target:self action:@selector(doPost)];
     self.navigationItem.leftBarButtonItem = cancelButton;
     self.navigationItem.rightBarButtonItem = postButton;
-    self.title = @"Post to App.net";
+    self.title = TITLE;
     
     // Body
-    self.bodyField = [[[UITextField alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-44.0f)] autorelease];
+    self.bodyField = [[[UITextView alloc] init] autorelease];
     self.bodyField.backgroundColor = [UIColor whiteColor];
     self.bodyField.delegate = self;
     self.bodyField.text = [@" " stringByAppendingString:self.url];
-    [self.view addSubview:self.bodyField];
+    self.bodyField.font = [UIFont fontWithName:@"System" size:20];
+    self.view = self.bodyField;
     
     // Bottom
     UIBarButtonItem *spaceItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:NULL action:NULL];
@@ -88,9 +87,21 @@
 	[self.bodyField becomeFirstResponder];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)textViewDidBeginEditing:(UITextView *)textView {
+    UITextPosition *beginning = [textView beginningOfDocument];
+    [textView setSelectedTextRange:[textView textRangeFromPosition:beginning toPosition:beginning]];
+}
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    if ([textView.text length] > POST_LENGTH) {
+        textView.text = [textView.text substringToIndex:POST_LENGTH-1];
+        return NO;
+    }
+    return YES;
+}
+
+- (void)textViewDidChange:(UITextView *)textView {
+    self.title = [TITLE stringByAppendingFormat:@" [%d/%d]", [textView.text length], POST_LENGTH];
 }
 
 @end

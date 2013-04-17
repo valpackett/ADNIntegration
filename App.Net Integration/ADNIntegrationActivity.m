@@ -62,7 +62,7 @@
 
     NSString *token = [ADNTokenStore getToken];
     if (!token) {
-        ADNLoginViewController *vc = [[[ADNLoginViewController alloc] init] autorelease];
+        ADNLoginViewController *vc = [[[ADNLoginViewController alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
         [nav pushViewController:vc animated:NO];
     } else {
         [ANKClient sharedClient].accessToken = token;
