@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) id delegate;
 @property (strong, nonatomic) NSString *url;
+@property (strong, nonatomic) UIImage *image;
 @property (strong, nonatomic) UITextView *bodyField;
 
 @end

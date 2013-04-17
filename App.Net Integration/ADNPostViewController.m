@@ -42,19 +42,46 @@
 - (void)doPost {
 	self.navigationItem.leftBarButtonItem.enabled = NO;
 	self.navigationItem.rightBarButtonItem.enabled = NO;
+    ANKClient *client = [ANKClient sharedClient];
     ANKPost *post = [[ANKPost alloc] init];
     post.text = self.bodyField.text;
+
+    // You're in a maze of twisty little blocks, all alike.
+    // You are likely to be eaten by a grue.
+    
     id handler = ^(id responseObject, ANKAPIResponseMeta *meta, NSError *error) {
         if (error) {
-            [MBHUDView hudWithBody:[error localizedDescription] type:MBAlertViewHUDTypeExclamationMark hidesAfter:3.0 show:YES];
+            [[[[UIAlertView alloc] initWithTitle:@"Error!" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease] show];
             self.navigationItem.leftBarButtonItem.enabled = YES;
             self.navigationItem.rightBarButtonItem.enabled = YES;
         } else {
             [self doDismiss];
             [MBHUDView hudWithBody:@"Posted!" type:MBAlertViewHUDTypeCheckmark hidesAfter:2.0 show:YES];
         }
+        [post release];
     };
-    [[ANKClient sharedClient] createPost:post completion:handler];
+
+    if (self.image) {
+        ANKFile *file = [[ANKFile alloc] init];
+        NSDateFormatter *dateFormat = [[[NSDateFormatter alloc] init] autorelease];
+        file.name = [[@"iOS Image " stringByAppendingString:[dateFormat stringFromDate:[NSDate date]]] stringByAppendingString:@".jpg"];
+        file.mimeType = @"image/jpeg";
+        file.isPublic = YES;
+        id imghandler = ^(id responseObject, ANKAPIResponseMeta *meta, NSError *error) {
+            if (error) {
+                [[[[UIAlertView alloc] initWithTitle:@"Error!" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease] show];
+                self.navigationItem.leftBarButtonItem.enabled = YES;
+                self.navigationItem.rightBarButtonItem.enabled = YES;
+            } else {
+                post.annotations = @[[ANKAnnotation oembedAnnotationForFile:file]];
+                [client createPost:post completion:handler];
+            }
+        };
+        NSData *imageData = UIImageJPEGRepresentation(self.image, 0.95f);
+        [client createFile:file withData:imageData completion:imghandler];
+    } else {
+        [client createPost:post completion:handler];
+    }
 }
 
 - (void)viewDidLoad {
@@ -77,8 +104,7 @@
     // Bottom
     UIBarButtonItem *spaceItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:NULL action:NULL];
     UIBarButtonItem *logoutButton = [[UIBarButtonItem alloc] initWithTitle:@"Log out" style:UIBarButtonItemStyleBordered target:self action:@selector(doLogout)];
-    NSArray *toolbarItems = [NSArray arrayWithObjects:spaceItem, logoutButton, nil];
-    [self setToolbarItems:toolbarItems animated:NO];
+    [self setToolbarItems:@[spaceItem, logoutButton] animated:NO];
     self.navigationController.toolbarHidden = NO;
 }
 

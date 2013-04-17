@@ -15,6 +15,7 @@
 		7F50015E17172CE800E423A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F50015D17172CE800E423A0 /* CoreGraphics.framework */; };
 		7F51A4A0171EE52900E36DC7 /* ADNLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F51A49E171EE52900E36DC7 /* ADNLoginViewController.h */; };
 		7F51A4A1171EE52900E36DC7 /* ADNLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F51A49F171EE52900E36DC7 /* ADNLoginViewController.m */; };
+		7F7225D1171F08E800E4ACFC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7225D0171F08E800E4ACFC /* AssetsLibrary.framework */; };
 		7F8A424F1719DB8200F4CCD8 /* Config.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F8A424E1719DB8200F4CCD8 /* Config.h */; };
 		7FBB64911719D8AB009A93B0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBB64901719D8AB009A93B0 /* SystemConfiguration.framework */; };
 		7FBB64931719D8B1009A93B0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBB64921719D8B1009A93B0 /* MobileCoreServices.framework */; };
@@ -35,6 +36,7 @@
 		7F50015D17172CE800E423A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7F51A49E171EE52900E36DC7 /* ADNLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNLoginViewController.h; sourceTree = "<group>"; };
 		7F51A49F171EE52900E36DC7 /* ADNLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNLoginViewController.m; sourceTree = "<group>"; };
+		7F7225D0171F08E800E4ACFC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		7F8A424E1719DB8200F4CCD8 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		7FBB64901719D8AB009A93B0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7FBB64921719D8B1009A93B0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -60,12 +62,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F7225D1171F08E800E4ACFC /* AssetsLibrary.framework in Frameworks */,
 				7FBB64931719D8B1009A93B0 /* MobileCoreServices.framework in Frameworks */,
 				7FBB64911719D8AB009A93B0 /* SystemConfiguration.framework in Frameworks */,
 				7F50015E17172CE800E423A0 /* CoreGraphics.framework in Frameworks */,
 				7F5001581717271100E423A0 /* Security.framework in Frameworks */,
-				7FD243A817172174009FC350 /* libsubstrate.dylib in Frameworks */,
 				7FD2438D171720E6009FC350 /* Foundation.framework in Frameworks */,
+				7FD243A817172174009FC350 /* libsubstrate.dylib in Frameworks */,
 				FC709D8A590B46EEBE743F7D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +97,7 @@
 		7FD2438B171720E6009FC350 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F7225D0171F08E800E4ACFC /* AssetsLibrary.framework */,
 				7FBB64921719D8B1009A93B0 /* MobileCoreServices.framework */,
 				7FBB64901719D8AB009A93B0 /* SystemConfiguration.framework */,
 				7F50015D17172CE800E423A0 /* CoreGraphics.framework */,

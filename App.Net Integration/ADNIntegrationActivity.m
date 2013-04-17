@@ -15,6 +15,8 @@
 #import "MBHUDView.h"
 #import "ADNKit.h"
 
+#define PHOTO_URL @"photos.app.net/{post_id}/1"
+
 @implementation ADNIntegrationActivity
 
 + (NSString *)activityTypeString {
@@ -35,7 +37,7 @@
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
     for (id object in activityItems) {
-        if ([object isKindOfClass:[NSString class]] || [object isKindOfClass:[NSURL class]]) {
+        if ([object isKindOfClass:[UIImage class]] || [object isKindOfClass:[NSString class]] || [object isKindOfClass:[NSURL class]]) {
             return YES;
         }
     }
@@ -44,14 +46,39 @@
 
 - (void)prepareWithActivityItems:(NSArray *)activityItems {
     for (id object in activityItems) {
-        NSString *url;
-        if ([object isKindOfClass:[NSString class]]) {
-            url = object;
+        if ([object isKindOfClass:[UIImage class]]) {
+            self.image = object;
+            self.url = PHOTO_URL;
+            return;
+        } else if ([object isKindOfClass:[NSString class]]) {
+            self.url = object;
         } else if ([object isKindOfClass:[NSURL class]]) {
             NSURL *o = object;
-            url = [o absoluteString];
+            if ([o.scheme isEqual: @"file"]) { // from cross-app document sharing
+                self.image = [UIImage imageWithContentsOfFile:o.path];
+                self.url = PHOTO_URL;
+            } else if ([o.scheme isEqual:@"assets-library"]) { // from Photos.app
+                dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+                dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+                dispatch_async(queue, ^{
+                    ALAssetsLibrary *assetsl = [[[ALAssetsLibrary alloc] init] autorelease];
+                    [assetsl assetForURL:o resultBlock:^(ALAsset *asset) {
+                        CGImageRef iref = [[asset defaultRepresentation] fullResolutionImage];
+                        if (iref) {
+                            self.image = [UIImage imageWithCGImage:iref];
+                            self.url = PHOTO_URL;
+                        }
+                        dispatch_semaphore_signal(sema);
+                    } failureBlock:^(NSError *error) {
+                        dispatch_semaphore_signal(sema);
+                    }];
+                });
+                dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+                dispatch_release(sema);
+            } else {
+                self.url = [o absoluteString];
+            }
         }
-        self.url = url;
     }
 }
 
@@ -68,6 +95,7 @@
         [ANKClient sharedClient].accessToken = token;
         ADNPostViewController *vc = [[[ADNPostViewController alloc] init] autorelease];
         vc.url = self.url;
+        vc.image = self.image;
         [nav pushViewController:vc animated:NO];
     }
 

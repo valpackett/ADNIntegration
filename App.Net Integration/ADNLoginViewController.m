@@ -70,7 +70,7 @@ typedef NS_ENUM(NSInteger, ADNCellType) {
             [self doDismiss];
             [MBHUDView hudWithBody:@"Logged in!" type:MBAlertViewHUDTypeCheckmark hidesAfter:2.0 show:YES];
 		} else {
-            [[[[UIAlertView alloc] initWithTitle:@"Error!" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease] show];
+            [[[[UIAlertView alloc] initWithTitle:@"Error!" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:NULL] autorelease] show];
 			usernameField.textField.enabled = YES;
 			passwordField.textField.enabled = YES;
 		}

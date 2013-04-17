@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @interface ADNIntegrationActivity : UIActivity
 
 @property (strong, nonatomic) NSString *url;
+@property (strong, nonatomic) UIImage *image;
 + (NSString *)activityTypeString;
 
 @end
