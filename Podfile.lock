@@ -1,0 +1,16 @@
+PODS:
+  - ADNKit (1.2):
+    - AFNetworking (~> 1.2.0)
+  - AFNetworking (1.2.0)
+  - MBAlertView (1.0.0)
+
+DEPENDENCIES:
+  - ADNKit (~> 1.2.0)
+  - MBAlertView (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  ADNKit: f26ef87fef292144d83ed569efcb45e186454d62
+  AFNetworking: 3cbae45f61a9f995cdbd56bd571223910d7f4e44
+  MBAlertView: 678e93f71506625e59715aefecee093128a96fc6
+
+COCOAPODS: 0.18.1

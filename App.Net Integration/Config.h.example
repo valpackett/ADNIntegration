@@ -1,0 +1,8 @@
+//  Config.h
+//  App.Net Integration
+
+#ifndef App_Net_Integration_Config_h
+#define App_Net_Integration_Config_h
+#define CLIENT_ID @"Your Client Id"
+#define PASSWORD_SECRET @"Your Password Secret"
+#endif

@@ -7,23 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F21F054171EF22000279881 /* ADNTokenStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F21F052171EF21F00279881 /* ADNTokenStore.h */; };
+		7F21F055171EF22000279881 /* ADNTokenStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F21F053171EF22000279881 /* ADNTokenStore.m */; };
+		7F5001581717271100E423A0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5001571717271100E423A0 /* Security.framework */; };
+		7F50015B171727A900E423A0 /* ADNIntegrationActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F500159171727A900E423A0 /* ADNIntegrationActivity.h */; };
+		7F50015C171727A900E423A0 /* ADNIntegrationActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F50015A171727A900E423A0 /* ADNIntegrationActivity.m */; };
+		7F50015E17172CE800E423A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F50015D17172CE800E423A0 /* CoreGraphics.framework */; };
+		7F51A4A0171EE52900E36DC7 /* ADNLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F51A49E171EE52900E36DC7 /* ADNLoginViewController.h */; };
+		7F51A4A1171EE52900E36DC7 /* ADNLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F51A49F171EE52900E36DC7 /* ADNLoginViewController.m */; };
+		7F8A424F1719DB8200F4CCD8 /* Config.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F8A424E1719DB8200F4CCD8 /* Config.h */; };
+		7FBB64911719D8AB009A93B0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBB64901719D8AB009A93B0 /* SystemConfiguration.framework */; };
+		7FBB64931719D8B1009A93B0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBB64921719D8B1009A93B0 /* MobileCoreServices.framework */; };
 		7FD2438D171720E6009FC350 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD2438C171720E6009FC350 /* Foundation.framework */; };
 		7FD2439E171720E6009FC350 /* App_Net_Integration.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FD2439D171720E6009FC350 /* App_Net_Integration.mm */; };
+		7FD243A817172174009FC350 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD243A717172174009FC350 /* libsubstrate.dylib */; };
+		7FDD4EF31719E900002CE824 /* ADNPostViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FDD4EF01719E900002CE824 /* ADNPostViewController.h */; };
+		7FDD4EF41719E900002CE824 /* ADNPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDD4EF11719E900002CE824 /* ADNPostViewController.m */; };
+		FC709D8A590B46EEBE743F7D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0EC14CEF244452A881CDA8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F21F052171EF21F00279881 /* ADNTokenStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNTokenStore.h; sourceTree = "<group>"; };
+		7F21F053171EF22000279881 /* ADNTokenStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNTokenStore.m; sourceTree = "<group>"; };
+		7F5001571717271100E423A0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7F500159171727A900E423A0 /* ADNIntegrationActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNIntegrationActivity.h; sourceTree = "<group>"; };
+		7F50015A171727A900E423A0 /* ADNIntegrationActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNIntegrationActivity.m; sourceTree = "<group>"; };
+		7F50015D17172CE800E423A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F51A49E171EE52900E36DC7 /* ADNLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNLoginViewController.h; sourceTree = "<group>"; };
+		7F51A49F171EE52900E36DC7 /* ADNLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNLoginViewController.m; sourceTree = "<group>"; };
+		7F8A424E1719DB8200F4CCD8 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		7FBB64901719D8AB009A93B0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7FBB64921719D8B1009A93B0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7FD24389171720E6009FC350 /* App.Net Integration.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "App.Net Integration.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD2438C171720E6009FC350 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7FD24391171720E6009FC350 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		7FD24392171720E6009FC350 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		7FD24394171720E6009FC350 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
-		7FD24398171720E6009FC350 /* App_Net_Integration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = App_Net_Integration.plist; path = Package/Library/PreferenceLoader/Preferences/App_Net_Integration.plist; sourceTree = "<group>"; };
-		7FD24399171720E6009FC350 /* App_Net_IntegrationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = App_Net_IntegrationIcon.png; path = Package/Library/PreferenceLoader/Preferences/App_Net_IntegrationIcon.png; sourceTree = "<group>"; };
-		7FD2439A171720E6009FC350 /* App_Net_IntegrationIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "App_Net_IntegrationIcon@2x.png"; path = "Package/Library/PreferenceLoader/Preferences/App_Net_IntegrationIcon@2x.png"; sourceTree = "<group>"; };
 		7FD2439B171720E6009FC350 /* App.Net Integration-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App.Net Integration-Prefix.pch"; sourceTree = "<group>"; };
-		7FD2439C171720E6009FC350 /* App_Net_Integration.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = App_Net_Integration.xm; sourceTree = "<group>"; };
+		7FD2439C171720E6009FC350 /* App_Net_Integration.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = App_Net_Integration.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		7FD2439D171720E6009FC350 /* App_Net_Integration.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = App_Net_Integration.mm; sourceTree = "<group>"; };
 		7FD243A1171720E6009FC350 /* App_Net_Integration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = App_Net_Integration.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/App_Net_Integration.plist; sourceTree = "<group>"; };
+		7FD243A717172174009FC350 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = /opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<absolute>"; };
+		7FDD4EF01719E900002CE824 /* ADNPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNPostViewController.h; sourceTree = "<group>"; };
+		7FDD4EF11719E900002CE824 /* ADNPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNPostViewController.m; sourceTree = "<group>"; };
+		7FEC4A7517173A88008FC97F /* App_Net_Integration */ = {isa = PBXFileReference; lastKnownFileType = folder; name = App_Net_Integration; path = Package/Library/MobileSubstrate/DynamicLibraries/App_Net_Integration; sourceTree = "<group>"; };
+		AD0EC14CEF244452A881CDA8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC541D76ECB43099247D976 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +60,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FBB64931719D8B1009A93B0 /* MobileCoreServices.framework in Frameworks */,
+				7FBB64911719D8AB009A93B0 /* SystemConfiguration.framework in Frameworks */,
+				7F50015E17172CE800E423A0 /* CoreGraphics.framework in Frameworks */,
+				7F5001581717271100E423A0 /* Security.framework in Frameworks */,
+				7FD243A817172174009FC350 /* libsubstrate.dylib in Frameworks */,
 				7FD2438D171720E6009FC350 /* Foundation.framework in Frameworks */,
+				FC709D8A590B46EEBE743F7D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +79,7 @@
 				7FD2438E171720E6009FC350 /* App.Net Integration */,
 				7FD2438B171720E6009FC350 /* Frameworks */,
 				7FD2438A171720E6009FC350 /* Products */,
+				EDC541D76ECB43099247D976 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +94,13 @@
 		7FD2438B171720E6009FC350 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7FBB64921719D8B1009A93B0 /* MobileCoreServices.framework */,
+				7FBB64901719D8AB009A93B0 /* SystemConfiguration.framework */,
+				7F50015D17172CE800E423A0 /* CoreGraphics.framework */,
+				7F5001571717271100E423A0 /* Security.framework */,
 				7FD2438C171720E6009FC350 /* Foundation.framework */,
+				AD0EC14CEF244452A881CDA8 /* libPods.a */,
+				7FD243A717172174009FC350 /* libsubstrate.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -67,6 +109,15 @@
 			isa = PBXGroup;
 			children = (
 				7FD2439C171720E6009FC350 /* App_Net_Integration.xm */,
+				7F500159171727A900E423A0 /* ADNIntegrationActivity.h */,
+				7FDD4EF01719E900002CE824 /* ADNPostViewController.h */,
+				7FDD4EF11719E900002CE824 /* ADNPostViewController.m */,
+				7F21F052171EF21F00279881 /* ADNTokenStore.h */,
+				7F21F053171EF22000279881 /* ADNTokenStore.m */,
+				7F51A49E171EE52900E36DC7 /* ADNLoginViewController.h */,
+				7F51A49F171EE52900E36DC7 /* ADNLoginViewController.m */,
+				7F50015A171727A900E423A0 /* ADNIntegrationActivity.m */,
+				7F8A424E1719DB8200F4CCD8 /* Config.h */,
 				7FD2439D171720E6009FC350 /* App_Net_Integration.mm */,
 				7FD2438F171720E6009FC350 /* Package */,
 				7FD24393171720E6009FC350 /* Supporting Files */,
@@ -104,28 +155,9 @@
 		7FD24395171720E6009FC350 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				7FD24396171720E6009FC350 /* PreferenceLoader */,
 				7FD2439F171720E6009FC350 /* MobileSubstrate */,
 			);
 			name = Library;
-			sourceTree = "<group>";
-		};
-		7FD24396171720E6009FC350 /* PreferenceLoader */ = {
-			isa = PBXGroup;
-			children = (
-				7FD24397171720E6009FC350 /* Preferences */,
-			);
-			name = PreferenceLoader;
-			sourceTree = "<group>";
-		};
-		7FD24397171720E6009FC350 /* Preferences */ = {
-			isa = PBXGroup;
-			children = (
-				7FD24398171720E6009FC350 /* App_Net_Integration.plist */,
-				7FD24399171720E6009FC350 /* App_Net_IntegrationIcon.png */,
-				7FD2439A171720E6009FC350 /* App_Net_IntegrationIcon@2x.png */,
-			);
-			name = Preferences;
 			sourceTree = "<group>";
 		};
 		7FD2439F171720E6009FC350 /* MobileSubstrate */ = {
@@ -139,6 +171,7 @@
 		7FD243A0171720E6009FC350 /* DynamicLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				7FEC4A7517173A88008FC97F /* App_Net_Integration */,
 				7FD243A1171720E6009FC350 /* App_Net_Integration.plist */,
 			);
 			name = DynamicLibraries;
@@ -151,6 +184,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F50015B171727A900E423A0 /* ADNIntegrationActivity.h in Headers */,
+				7F8A424F1719DB8200F4CCD8 /* Config.h in Headers */,
+				7FDD4EF31719E900002CE824 /* ADNPostViewController.h in Headers */,
+				7F51A4A0171EE52900E36DC7 /* ADNLoginViewController.h in Headers */,
+				7F21F054171EF22000279881 /* ADNTokenStore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,11 +199,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FD243A4171720E6009FC350 /* Build configuration list for PBXNativeTarget "App.Net Integration" */;
 			buildPhases = (
+				2FB824D2906F4226A7E98175 /* Check Pods Manifest.lock */,
 				7FD24383171720E6009FC350 /* ShellScript */,
 				7FD24384171720E6009FC350 /* Sources */,
 				7FD24385171720E6009FC350 /* Frameworks */,
 				7FD24386171720E6009FC350 /* Headers */,
 				7FD24387171720E6009FC350 /* ShellScript */,
+				99551A60916043AEB249EBE0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +242,20 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2FB824D2906F4226A7E98175 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
 		7FD24383171720E6009FC350 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,6 +282,20 @@
 			shellPath = /bin/sh;
 			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
 		};
+		99551A60916043AEB249EBE0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -236,6 +304,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FD2439E171720E6009FC350 /* App_Net_Integration.mm in Sources */,
+				7F50015C171727A900E423A0 /* ADNIntegrationActivity.m in Sources */,
+				7FDD4EF41719E900002CE824 /* ADNPostViewController.m in Sources */,
+				7F51A4A1171EE52900E36DC7 /* ADNLoginViewController.m in Sources */,
+				7F21F055171EF22000279881 /* ADNTokenStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -264,7 +337,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -278,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = YES;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -289,7 +363,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,13 +374,30 @@
 		};
 		7FD243A5171720E6009FC350 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDC541D76ECB43099247D976 /* Pods.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+					"$(inherited)/**",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "App.Net Integration/App.Net Integration-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"/opt/theos/include/**",
+					"$(inherited)/**",
+				);
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
@@ -320,13 +411,30 @@
 		};
 		7FD243A6171720E6009FC350 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDC541D76ECB43099247D976 /* Pods.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+					"$(inherited)/**",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "App.Net Integration/App.Net Integration-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"/opt/theos/include/**",
+					"$(inherited)/**",
+				);
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
@@ -357,6 +465,7 @@
 				7FD243A6171720E6009FC350 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
